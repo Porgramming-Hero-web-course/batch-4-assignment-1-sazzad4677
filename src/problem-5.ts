@@ -4,7 +4,6 @@ function getProperty<T, K extends keyof T>(obj: T, propertyName: K): T[K] {
   return obj[propertyName];
 }
 
-
 // .Test function
-// const person = { name: "Alice", age: 30 };
-// console.log(getProperty(person, "name"));
+const person = { name: "Alice", age: 30 };
+console.log(getProperty(person, "name"));
