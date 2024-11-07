@@ -8,6 +8,6 @@ class Car {
 }
 
 // Test
-const car = new Car("Honda", "Civic", 2018);
-const carAge = car.getCarAge();
-console.log(carAge)
+// const car = new Car("Honda", "Civic", 2018);
+// const carAge = car.getCarAge();
+// console.log(carAge)

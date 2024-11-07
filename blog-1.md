@@ -1,4 +1,4 @@
-Typescript is a strongly typed language built on top of Javascript. This allows to catch the errors on the compiling time instead of those on the runtime. This way helps in minimizing the bug from our code. What we are going to learn in this lesson is the *Union and Intersection types* in Typescript.
+Typescript is a strongly typed language built on top of Javascript. This allows to catch the errors on the compiling time instead of those on the runtime. This way helps in minimizing the bug from our code. What we are going to learn in this lesson is the _Union and Intersection types_ in Typescript.
 
 ### **Union Types**
 
@@ -7,16 +7,14 @@ When you need to specify that the value can be a few types of different type —
 ### **Syntax:**
 
 ```tsx
-type TypeName = Type1 | Type2 | Type3
+type TypeName = Type1 | Type2 | Type3;
 ```
 
 ### **Example:**
 
 ```tsx
-function formatValue=(value:string|number):string=>
-
-		return typeof value === 'string'? value: value. toString();
-
+function formatValue(value: string | number): string {
+  return typeof value === "string" ? value : value.toString();
 }
 ```
 
@@ -33,29 +31,21 @@ interface TypeName extends Type1, Type2, typeType3;
 ### **Example:**
 
 ```tsx
-interface User{
-
-		name: string;
-
-		age: number;
-
+interface User {
+  name: string;
+  age: number;
 }
 
 interface Admin {
-
-		role: string;
-
+  role: string;
 }
 
-export type AdminUser = User & { admin: true; }
+export type AdminUser = User & Admin;
 
 let admin: AdminUser = {
-
-		name: "John",
-
-		age: 30,
-
-		role: "Admin"
+  name: "John",
+  age: 30,
+  role: "Admin",
 };
 ```
 

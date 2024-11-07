@@ -18,5 +18,5 @@ function calculateShapeArea(shape: Circle | Rectangle): number {
 }
 
 // test function
-const shape = calculateShapeArea({ shape: "rectangle", width: 4, height: 6 });
-console.log(shape);
+// const shape = calculateShapeArea({ shape: "rectangle", width: 4, height: 6 });
+// console.log(shape);

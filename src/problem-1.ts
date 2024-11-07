@@ -4,4 +4,4 @@ const sumOfNumbers = (nums: number[]): number => {
   return sum;
 };
 
-console.log(`sumOfNumbers`, sumOfNumbers([1, 2, 3, 4, 5]));
+// console.log(`sumOfNumbers`, sumOfNumbers([1, 2, 3, 4, 5]));
